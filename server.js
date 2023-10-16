@@ -10,7 +10,7 @@ const requestTime = (req, res, next) => {
   const date = new Date();
   const day = date.getDay();
   const hours = date.getHours();
-  if (day >= 1 && day <= 5 && hours >= 9 && hours <= 17){
+  if (day >= 1 && day <= 5 && hours >= 0 && hours <= 17){
     
      next();
 } else {
